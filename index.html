@@ -11,6 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+                integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -18,10 +21,16 @@
     <header class="header">
         <div class="container header-container">
         <nav class="header-navigation">
-            <a class="header-logo" href=""><img src="./img/logo.svg" alt="Лого сайта" /></a>
+            <a class="header-logo" href="">
+                <svg class="logo-icon" 
+                    width="66" 
+                    height="55">
+                    <use href="./img/icons.svg#icon-logo"></use>
+                </svg>
+            </a>
             <ul class="header-list list">
                 <li class="header-item">
-                    <a href="" class="header-link link">О нас</a>
+                    <a href="" class="header-link link current">О нас</a>
                 </li>
                 <li class="header-item">
                     <a href="" class="header-link link">Услуги и цены</a>
@@ -37,21 +46,23 @@
         <div class="header-connect">
             <a class="header-tel link" href="tel:+380441111111">
                 +38 044 111 11 11</a>
-            <button class="header-btn btn" type="button">онлайн-запись</button>
+            <button class="header-btn btn" type="button" data-modal-open>онлайн-запись</button>
         </div>
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="container hero-container">
-                <ul class="hero-list list">
-                    <li class="hero-item">
-                        <a href="" class="hero-link link">Instagram</a>
-                    </li>
-                    <li class="hero-item">
-                        <a href="" class="hero-link link">Youtube</a>
-                    </li>
-                </ul>
+                <div class="hero-left">
+                    <ul class="hero-list list">
+                        <li class="hero-item">
+                            <a href="" class="hero-link link">Instagram</a>
+                        </li>
+                        <li class="hero-item">
+                            <a href="" class="hero-link link">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="hero-right">
                     <p class="hero-pre-title pre-title" lang="en">
                         A hair salon for men in Kyiv
@@ -102,82 +113,109 @@
                 </p>
                 <h2 class="prices-title section-title">Услуги и цены</h2>
                 <div class="prices-wrap">
-                    <ul class="prices-list list">
+                    <ul class="prices-list prices-list-light list">
                         <li class="prices-item">
                             <p class="prices-item-text">Мужская стрижка</p>
-                            <span class="prices-item-text">от 300 грн.</span>
+                            <span class="prices-item-text prices-item-description">
+                                от 300 грн.
+                            </span>
                         </li>
                         <li class="prices-item">
                             <p class="prices-item-text">Стрижка бороды</p>
-                            <span class="prices-item-text">от 200 грн.</span>
+                            <span class="prices-item-text prices-item-description">
+                                от 200 грн.
+                            </span>
                         </li>
                         <li class="prices-item">
                             <p class="prices-item-text">Стрижка усов</p>
-                            <span class="prices-item-text">от 200 грн.</span>
+                            <span class="prices-item-text prices-item-description">
+                                от 200 грн.
+                            </span>
                         </li>
                         <li class="prices-item">
                             <p class="prices-item-text">Бритье опасной бритвой</p>
-                            <span class="prices-item-text">от 200 грн.</span>
+                            <span class="prices-item-text prices-item-description">
+                                от 200 грн.
+                            </span>
                         </li>
                     </ul>
-                    <ul class="prices-list list">
+                    <ul class="prices-list prices-list-dark list">
                         <li class="prices-item">
                             <p class="prices-item-text">Cтрижка у стажера</p>
-                            <span class="prices-item-text">от 50 грн.</span>
+                            <span class="prices-item-text prices-item-description">
+                                от 50 грн.
+                            </span>
                         </li>
                         <li class="prices-item">
                             <p class="prices-item-text">Стрижка под насадку</p>
-                            <span class="prices-item-text">от 200 грн.</span>
+                            <span class="prices-item-text prices-item-description">
+                                от 200 грн.
+                            </span>
                         </li>
                         <li class="prices-item">
                             <p class="prices-item-text">
                                 Детская стрижка (до 12 лет)
                             </p>
-                            <span class="prices-item-text">от 300 грн.</span>
+                            <span class="prices-item-text prices-item-description">
+                                от 300 грн.
+                            </span>
                         </li>
                         <li class="prices-item">
                             <p class="prices-item-text">Камуфлирование седины</p>
-                            <span class="prices-item-text">от 200 грн.</span>
+                            <span class="prices-item-text prices-item-description">
+                                от 200 грн.
+                            </span>
                         </li>
                     </ul>
                 </div>
                 <button type="button" class="prices-btn btn">онлайн-запись</button>
             </div>
         </section>
-        <section class="reasons">
-            <ul class="reasons-list list">
-                <li class="reasons-item">
-                    <span class="reasons-count">600</span>
-                    <p class="reasons-item-text">
-                        Довольных клиентов в день
-                    </p>
-                </li>
-                <li class="reasons-item">
-                    <span class="reasons-count">50</span>
-                    <p class="reasons-item-text">
-                        Наград за отличный сервис
-                    </p>
-                </li>
-                <li class="reasons-item">
-                    <span class="reasons-count">20</span>
-                    <p class="reasons-item-text">Лучших мастеров Киева</p>
-                </li>
-                <li class="reasons-item">
-                    <span class="reasons-count">100</span>
-                    <p class="reasons-item-text">
-                        Подарков постоянным клиентам
-                    </p>
-                </li>
-            </ul>
-            <div class="reasons-right">
-                <p class="reasons-pre-title pre-title">старая традиционная школа</p>
-                <h2 class="reasons-title section-title">Почему приходят именно к нам?</h2>
-                <p class="reasons-after-title after-title">
-                    О нас говорят только хорошее. Но лучше 1 раз увидеть и
-                    прочувствовать, чем 10 раз прочитать.
-                </p>
-            </div>
-        </section>
+            <section class="reasons">
+                <div class="container reasons-container">
+                    <div class="reasons-left">
+                        <ul class="reasons-list list">
+                            <li class="reasons-item">
+                                <span class="reasons-count">600</span>
+                                <p class="reasons-item-text">
+                                    Довольных клиентов в день
+                                </p>
+                            </li>
+                            <li class="reasons-item">
+                                <span class="reasons-count">50</span>
+                                <p class="reasons-item-text">
+                                    Наград за отличный сервис
+                                </p>
+                            </li>
+                            <li class="reasons-item">
+                                <span class="reasons-count">20</span>
+                                <p class="reasons-item-text">
+                                    Лучших мастеров Киева
+                                </p>
+                            </li>
+                            <li class="reasons-item">
+                                <span class="reasons-count">100</span>
+                                <p class="reasons-item-text">
+                                    Подарков постоянным клиентам
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <div class="reasons-right">
+                        <p class="reasons-pre-title pre-title">
+                            старая традиционная школа
+                        </p>
+                        <h2 class="reasons-title section-title">
+                            Почему приходят именно к нам?
+                        </h2>
+                        <p class="reasons-after-title after-title">
+                            О нас говорят только хорошее. Но лучше 1 раз увидеть
+                            и прочувствовать, чем 10 раз прочитать.
+                        </p>
+                    </div>
+                </div>
+            </section>
         <section class="masters" id="masters">
             <div class="container">
                 <p class="masters-pre-title pre-title">
@@ -190,10 +228,50 @@
                             alt="барбер стрежет клиента" 
                             width="370" height="346" />
                         <div class="masters-item-content">
-                            <h3 lang="en" class="masters-item-title">John Smith</h3>
+                            <h3 lang="en" class="masters-item-title">
+                                John Smith
+                            </h3>
                             <p lang="en" class="masters-item-text">
                                 Extreme Barber
                             </p>
+                            <ul class="masters-social-list list">
+                                <li class="masters-social-item">
+                                    <a href="" class="masters-social-link link">
+                                            <svg class="masters-social-icon" 
+                                                width="20" 
+                                                height="20">
+                                                <use href="./img/icons.svg#icon-instagram"></use>
+                                            </svg>
+                                    </a>
+                                </li>
+                                <li class="masters-social-item">
+                                    <a href="" class="masters-social-link link">
+                                        <svg class="masters-social-icon" 
+                                            width="20" 
+                                            height="20">
+                                            <use href="./img/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="masters-social-item">
+                                    <a href="" class="masters-social-link link">
+                                        <svg class="masters-social-icon" 
+                                            width="20" 
+                                            height="20">
+                                            <use href="./img/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="masters-social-item">
+                                    <a href="" class="masters-social-link link">
+                                        <svg class="masters-social-icon" 
+                                            width="20" 
+                                            height="20">
+                                            <use href="./img/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="masters-item">
@@ -207,6 +285,36 @@
                             <p lang="en" class="masters-item-text">
                                 Extreme Barber
                             </p>
+                            <ul class="masters-social-list list">
+                                <li class="masters-social-item">
+                                    <a href="" class="masters-social-link link">
+                                        <svg class="masters-social-icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="masters-social-item">
+                                    <a href="" class="masters-social-link link">
+                                        <svg class="masters-social-icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="masters-social-item">
+                                    <a href="" class="masters-social-link link">
+                                        <svg class="masters-social-icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="masters-social-item">
+                                    <a href="" class="masters-social-link link">
+                                        <svg class="masters-social-icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="masters-item">
@@ -214,10 +322,42 @@
                             alt="барбер стрежет клиента" 
                             width="370" height="346" />
                         <div class="masters-item-content">
-                            <h3 lang="en" class="masters-item-title">Alan Black</h3>
+                            <h3 lang="en" class="masters-item-title">
+                                Alan Black
+                            </h3>
                             <p lang="en" class="masters-item-text">
                                 Extreme Barber
                             </p>
+                            <ul class="masters-social-list list">
+                                <li class="masters-social-item">
+                                    <a href="" class="masters-social-link link">
+                                        <svg class="masters-social-icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="masters-social-item">
+                                    <a href="" class="masters-social-link link">
+                                        <svg class="masters-social-icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="masters-social-item">
+                                    <a href="" class="masters-social-link link">
+                                        <svg class="masters-social-icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="masters-social-item">
+                                    <a href="" class="masters-social-link link">
+                                        <svg class="masters-social-icon" width="20" height="20">
+                                            <use href="./img/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
@@ -279,5 +419,15 @@
             </li>
         </ul>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="close-icon" width="18" height="18">
+                    <use href="./img/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
