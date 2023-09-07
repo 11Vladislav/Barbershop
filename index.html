@@ -168,7 +168,7 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button" class="prices-btn btn">онлайн-запись</button>
+                <button type="button" class="prices-btn btn"  data-modal-open>онлайн-запись</button>
             </div>
         </section>
             <section class="reasons">
@@ -387,6 +387,27 @@
         </section>
         <section class="online">
             <h2 class="online-title section-title">Онлайн-запись</h2>
+            <form action="#" class="online-form">
+                <div class="online-input-wrap">
+                    <input type="text" 
+                        name="online-name"
+                        placeholder="Имя*" 
+                        class="online-input"
+                        required
+                        />
+                    <input type="tel" 
+                        name="online-tel"
+                        placeholder="Телефон*" 
+                        class="online-input"
+                        required 
+                        />
+                </div>
+                <textarea name="online-text" 
+                    class="online-text" 
+                    placeholder="сообщение">
+                </textarea>
+                <button type="submit" class="btn online-btn">отправить</button>
+            </form>
         </section>
         <section class="contacts">
             <h2 class="contacts-title section-title">Контакты</h2>
@@ -426,6 +447,63 @@
                     <use href="./img/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <p class="modal-title">Очень важный заголовок модалки</p>
+<form action="#" class="modal-form">
+    <div class="modal-form-field">
+        <label for="user-name" class="modal-input-text">Введите имя</label>
+        <div class="modal-input-wrap">
+            <input type="text" minlength="2" name="user-name" class="modal-input" placeholder="John Dou *"
+                required="required" id="user-name" />
+            <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="modal-form-field">
+        <label for="user-email" class="modal-input-text">
+            Введите почту</label>
+        <div class="modal-input-wrap">
+            <input type="email" name="user-email" class="modal-input" placeholder="введите почту" id="user-email" />
+            <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="modal-form-field">
+        <label for="user-tel" class="modal-input-text">
+            Введите номер</label>
+        <div class="modal-input-wrap">
+            <input type="tel" name="user-tel" id="user-tel" class="modal-input" required
+                placeholder="+38 (098) 111-11-11 *" />
+            <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="modal-form-field">
+        <label for="user-text" class="modal-input-text">
+            Введите коммент</label>
+        <textarea name="user-text" id="user-text" class="modal-text" placeholder="Введите текст"
+            maxlength="10"></textarea>
+    </div>
+
+    <div class="modal-form-field">
+        <input type="checkbox" name="policy" id="modal-check" class="modal-check visually-hidden" />
+        <label for="modal-check" class="modal-check-text">
+            <span><svg class="icon-check" width="16" height="15">
+                    <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+            </span>
+            Текст относится к политике пользования</label>
+    </div>
+
+    <button type="submit" class="btn modal-btn">
+            submit
+        <svg class="input-btn-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone-black"></use>
+        </svg>
+    </button>
+</form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
