@@ -522,8 +522,8 @@ body {
   background-position: center;
   padding-top: 130px;
   padding-bottom: 130px;
-  /* max-width: 1280px;
-  margin: 0 auto; */
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .prices-pre-title {
@@ -803,9 +803,6 @@ body {
   background-color: #191C26;
 }
 
-.contact-wrapp {
-  background-color: var(--second-title-color);
-}
 .contact-wrapp .container {
   display: flex;
 }
@@ -816,7 +813,6 @@ body {
   width: calc(50% + 15px);
   padding-right: 40px;
   margin-left: 55px;
-  background-color: #191C26;
 }
 
 .online-title {
@@ -891,7 +887,7 @@ body {
 }
 
 .online-input + .online-input {
-  width: 260px;
+  width: 230px;
 }
 
 .online-btn {
@@ -900,7 +896,6 @@ body {
 
 .contact-wrapp .container {
   display: flex;
-  background-color: #191C26;
 }
 
 .contacts {
@@ -932,7 +927,12 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--second-text-color);
+}
+
+.contacts-icon {
+  margin-right: 20px;
 }
 
 .contacts-bottom-title {
@@ -950,6 +950,11 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+}
+
+.adress-text {
+  display: block;
+  max-width: 230px;
 }
 
 .footer-container {

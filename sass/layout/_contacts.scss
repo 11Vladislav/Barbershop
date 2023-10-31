@@ -27,7 +27,12 @@
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
+    text-align: center;
     color: var(--second-text-color);
+}
+
+.contacts-icon{
+    margin-right: 20px;
 }
 
 .contacts-bottom-title {
@@ -45,4 +50,9 @@
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--second-text-color);
+}
+
+.adress-text{
+    display: block;
+    max-width: 230px;
 }
