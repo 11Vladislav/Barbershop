@@ -40,6 +40,13 @@
     justify-content: center;
 }
 
+.close-icon{
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
 .is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -170,8 +177,6 @@
         justify-content: center;
     }
 }
-
-
 
 .icon-check {
     fill: transparent;

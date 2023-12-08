@@ -76,18 +76,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--accent-color);
+    background-color: #ffffff;
     transition: color 300ms linear, 
         background-color 300ms linear;
         &:hover,
         &:focus {
-            background-color: aqua;
             color: var(--accent-color);
             }
         }
 
 .masters-social-icon {
-    fill: #ffffff;
+    fill: #000000;
         &:hover,
         &:focus {
             fill: var(--accent-color);

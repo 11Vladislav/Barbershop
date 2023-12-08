@@ -3,11 +3,14 @@
 }
 
 .hero-left {
-    width: 93px;
-    display: flex;
-    align-items: flex-end;
-    padding-left: 23px;
-    padding-bottom: 40px;
+    display: none;
+        @media screen and (min-width: 768px) {
+            width: 93px;
+            display: flex;
+            align-items: flex-end;
+            padding-left: 23px;
+            padding-bottom: 40px;
+        }
 }
 
 .hero-list {
@@ -49,24 +52,35 @@
     background-color: var(--fourth-text-color);
     background-image: linear-gradient(rgba(25, 28, 38, 0.2),
             rgba(25, 28, 38, 0.2)),
-        url(../img/hero-bg.jpg);
+        url(../img/mobile-slider-img-3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     flex-grow: 1;
-    padding-top: 272px;
-    padding-bottom: 206px;
-    padding-left: 96px;
+    padding-top: 208px;
+    padding-left: 31px;
+    padding-bottom: 183px;
+        @media screen and (min-width: 768px){
+            padding-top: 272px;
+            padding-bottom: 206px;
+            padding-left: 96px;
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2),
+                        rgba(25, 28, 38, 0.2)),
+                    url(../img/tablet-slider-img-3.jpg);
+        }
+        @media screen and (min-width: 1200px) {
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2),
+                        rgba(25, 28, 38, 0.2)),
+                    url(../img/hero-bg.jpg);   
+        }
 }
 
 .hero-pre-title {
     color: var(--first-text-color);
     margin-bottom: 20px;
-
     &::before {
         background-color: var(--first-text-color);
     }
-
     &:hover:before {
         background-color: tomato;
     }
@@ -75,16 +89,20 @@
 .hero-title {
     font-family: Raleway;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 48px;
     line-height: 1.18;
     letter-spacing: 0.05em;
-
     color: var(--main-title-color);
     margin-bottom: 20px;
+        @media screen and (min-width: 1200px) {
+            font-size: 72px;
+        }
 }
 
 .hero-after-title {
     max-width: 400px;
-
     color: var(--second-text-color);
+    @media screen and (max-width: 480px) {
+        max-width: 306px;
+    }
 }
