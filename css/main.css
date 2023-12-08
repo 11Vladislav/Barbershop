@@ -616,7 +616,7 @@ body {
   position: fixed;
   background-color: #303030;
   right: 20%;
-  bottom: 5px;
+  bottom: 25px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -627,7 +627,7 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .btn-up {
-    margin: 0 auto;
+    justify-content: center;
   }
 }
 

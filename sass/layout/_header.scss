@@ -279,7 +279,7 @@
     position: fixed;
     background-color: #303030;
     right: 20%;
-    bottom: 5px;
+    bottom: 25px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -288,7 +288,7 @@
     width: 60px;
     height: 60px;
     @media screen and (max-width: 1200px) {
-        margin: 0 auto;
+       justify-content: center;
     }
 }
 
