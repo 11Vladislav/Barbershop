@@ -1,10 +1,12 @@
 .gallery {
-    padding-top: 84px;
-    padding-bottom: 84px;
-        @media screen and (min-width: 1200px) {
-            padding-top: 130px;
-            padding-bottom: 130px;
-        }
+    padding: 84px 0;
+    @media screen and (min-width: 768px) {
+        padding: 100px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
 }
 
 img {

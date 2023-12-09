@@ -1,29 +1,49 @@
+.online-container{
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
 .online {
-    padding-top: 130px;
-    padding-bottom: 130px;
-    width: calc(50% + 15px);
-    padding-right: 40px;
-    margin-left: 55px;
+    padding: 84px 0;
+    width: 100%;
+    background-color: #191C26;
+    @media  screen and (min-width: 1200px) {
+        padding-top: 130px;
+        padding-bottom: 130px;
+        width: calc(50% + 15px);
+        padding-right: 40px;
+        margin-left: 55px;
+    }
 }
 
 .online-title {
+    margin-left: 10%;
     color: var(--main-title-color);
     margin-bottom: 44px;
 }
 
+.online-form{
+    margin: 0 31px;
+}
+
 .online-input-wrap {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 44px;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 44px;
+    }
 }
 
 .online-input,
 .online-text {
-    width: 270px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
     padding-bottom: 8px;
+    margin-bottom: 44px;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -32,6 +52,10 @@
     color: var(--first-text-color);
     outline: none;
     transition: border-color 300ms linear;
+        @media screen and (min-width: 768px) {
+            width: 230px;
+            margin-bottom: 0;
+        }
 }
 
 .online-input:focus,
@@ -63,13 +87,21 @@
 }
 
 .online-input+.online-input {
-    width: 230px;
+    @media screen and (min-width: 768px) {
+        width: 230px;
+    }
+    
 }
 
 .online-btn {
+    margin-left: 25%;
     color: var(--first-button-color);
 }
 
 .contact-wrapp .container {
     display: flex;
+    // flex-direction: column;
+    // @media screen and (min-width: 1200px) {
+    // flex-direction: row;
+    // }
 }

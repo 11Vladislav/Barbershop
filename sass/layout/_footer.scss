@@ -1,8 +1,13 @@
 .footer-container {
     display: flex;
-    align-items: center;
-    padding: 57px 0 55px 0;
+    flex-direction: column-reverse;
+    padding: 44px 31px 44px 31px;
     background-color: var(--alt-background-color);
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+            padding: 57px 31px 55px 31px;
+        }
 }
 
 .footer-copy {
@@ -16,6 +21,10 @@
 .footer-list {
     display: flex;
     margin-left: auto;
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer-item {
