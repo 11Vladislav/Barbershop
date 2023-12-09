@@ -4,6 +4,10 @@
 
 .reasons-container {
     display: flex;
+    flex-direction: column-reverse;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
 }
 
 .reasons-left {
@@ -32,9 +36,23 @@
     margin-top: 30px;
 }
 
-.reasons-left,
+.reasons-left{
+    width: 418px;
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc(50% - 30px);
+    }
+}
 .reasons-right {
-    width: calc(50% - 30px);
+    width: 418px;
+    @media screen and (min-width: 768px) {
+        margin-right: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc(50% - 30px);
+    }
 }
 
 .reasons-count {
@@ -81,5 +99,9 @@
 }
 
 .reasons-after-title {
+    margin-bottom: 44px;
     color: var(--fourth-text-color);
+    @media screen and (min-width: 1200px){
+        margin-bottom: 0;
+    }
 }

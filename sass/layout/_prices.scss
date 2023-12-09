@@ -1,13 +1,25 @@
 .prices {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    max-width: 480px;
+    background-image: url(../img/prices-bg-mob.png);
     background-color: #111319;
-    background-image: url(../img/prices-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    padding-top: 130px;
-    padding-bottom: 130px;
-    max-width: 1280px;
     margin: 0 auto;
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        max-width: 768px;
+        background-image: url(../img/prices-bg-tab.png)
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 130px;
+        padding-bottom: 130px;
+        max-width: 1280px;
+        background-image: url(../img/prices-bg.png);
+    }
 }
 
 .prices-pre-title {
@@ -26,12 +38,25 @@
 
 .prices-wrap {
     display: flex;
+    flex-direction: column;
     margin-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
+    
 }
 
 .prices-list {
-    width: 50%;
-    padding: 30px 40px;
+    width: 418px;
+    padding: 30px 30px;
+
+    @media screen and (min-width: 768px) {
+        width: 690px;
+        padding: 30px 40px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 50%;  
+    }
 }
 
 .prices-list-light {
@@ -41,9 +66,15 @@
 }
 
 .prices-list-dark {
-    background: linear-gradient(180deg, 
+    background: linear-gradient(360deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%);
+    @media  screen and (min-width: 1200px) {
+        background: linear-gradient(180deg,
         #090b13 0%,
         rgba(9, 11, 19, 0.2) 100%);
+    }
+
 }
 
 .prices-item {
@@ -71,10 +102,14 @@
 }
 
 .prices-item-text {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--second-text-color);
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+
 }
 
 .prices-btn {
