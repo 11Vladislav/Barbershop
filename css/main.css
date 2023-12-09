@@ -1301,8 +1301,6 @@ img {
     padding-top: 130px;
     padding-bottom: 130px;
     width: calc(50% + 15px);
-    padding-right: 40px;
-    margin-left: 55px;
   }
 }
 
@@ -1404,6 +1402,11 @@ img {
 .online-btn {
   margin-left: 25%;
   color: var(--first-button-color);
+}
+@media screen and (min-width: 768px) {
+  .online-btn {
+    margin-left: 0;
+  }
 }
 
 .contact-wrapp .container {
