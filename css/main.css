@@ -173,6 +173,7 @@ body {
 
 .modal {
   width: calc(50% - 20px);
+  max-width: 300px;
   min-height: 300px;
   background-color: #f3f3f3;
   border-radius: 5px;
@@ -185,8 +186,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .modal {
+    max-width: 418px;
     min-height: 500px;
-    left: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 550px;
   }
 }
 
