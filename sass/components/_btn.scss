@@ -8,13 +8,15 @@
     border: 1px solid #ff6c00;
     border-radius: 25px;
     background-color: transparent;
-    min-width: 160px;
-    height: 40px;
+    padding: 12px;
     transition: color 300ms linear, background-color 300ms linear;
 
     &:hover,
     &:focus {
         color: var(--first-button-color);
         background-color: var(--accent-color);
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 160px;
     }
 }

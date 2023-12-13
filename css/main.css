@@ -132,13 +132,17 @@ body {
   border: 1px solid #ff6c00;
   border-radius: 25px;
   background-color: transparent;
-  min-width: 160px;
-  height: 40px;
+  padding: 12px;
   transition: color 300ms linear, background-color 300ms linear;
 }
 .btn:hover, .btn:focus {
   color: var(--first-button-color);
   background-color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    max-width: 160px;
+  }
 }
 
 .after-title {
@@ -315,9 +319,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: calc(70% - 20px);
 }
-.modal-btn:hover svg {
-  fill: #ffffff;
+@media screen and (min-width: 768px) {
+  .modal-btn {
+    max-width: 160px;
+  }
 }
 
 .input-btn-icon {
