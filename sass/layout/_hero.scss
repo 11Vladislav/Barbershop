@@ -61,7 +61,7 @@
     background-color: var(--fourth-text-color);
     background-image: linear-gradient(rgba(25, 28, 38, 0.2),
             rgba(25, 28, 38, 0.2)),
-        url(../../img/mobile-slider-img-3.jpg);
+        url(../img/mobile-slider-img-3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -73,7 +73,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(25, 28, 38, 0.2),
-            rgba(25, 28, 38, 0.2)), url(../../img/mobile-slider-img-3-2x.jpg)
+            rgba(25, 28, 38, 0.2)), url(../img/mobile-slider-img-3-2x.jpg)
         }
         @media screen and (min-width: 768px){
             padding-top: 272px;
@@ -81,23 +81,23 @@
             padding-left: 96px;
             background-image: linear-gradient(rgba(25, 28, 38, 0.2),
                         rgba(25, 28, 38, 0.2)),
-                    url(../../img/tablet-slider-img-3.jpg);
+                    url(../img/tablet-slider-img-3.jpg);
         @media screen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: linear-gradient(rgba(25, 28, 38, 0.2),
-                        rgba(25, 28, 38, 0.2)), url(../../img/tablet-slider-img-3-2x.jpg)
+                        rgba(25, 28, 38, 0.2)), url(../img/tablet-slider-img-3-2x.jpg)
         }
     }
         @media screen and (min-width: 1200px) {
             background-image: linear-gradient(rgba(25, 28, 38, 0.2),
                         rgba(25, 28, 38, 0.2)),
-                    url(../../img/hero-bg.jpg);
+                    url(../img/hero-bg.jpg);
             @media screen and (min-device-pixel-ratio: 2),
                     (min-resolution: 192dpi),
                     (min-resolution: 2dppx) {
                 background-image: linear-gradient(rgba(25, 28, 38, 0.2),
-                rgba(25, 28, 38, 0.2)), url(../../img/tablet-slider-img-3-2x.jpg)
+                rgba(25, 28, 38, 0.2)), url(../img/tablet-slider-img-3-2x.jpg)
         }
     }      
 }

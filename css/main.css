@@ -703,7 +703,7 @@ body {
 
 .hero-right {
   background-color: var(--fourth-text-color);
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/mobile-slider-img-3.jpg);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/mobile-slider-img-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -714,7 +714,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-right {
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/mobile-slider-img-3-2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/mobile-slider-img-3-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -722,22 +722,22 @@ body {
     padding-top: 272px;
     padding-bottom: 206px;
     padding-left: 96px;
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/tablet-slider-img-3.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/tablet-slider-img-3.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-right {
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/tablet-slider-img-3-2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/tablet-slider-img-3-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-right {
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/hero-bg.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero-bg.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-right {
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/tablet-slider-img-3-2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/tablet-slider-img-3-2x.jpg);
   }
 }
 
@@ -875,7 +875,7 @@ body {
   padding-top: 84px;
   padding-bottom: 84px;
   max-width: 480px;
-  background-image: url(../../img/prices-bg-mob.png);
+  background-image: url(../img/prices-bg-mob.png);
   background-color: #111319;
   background-repeat: no-repeat;
   background-size: cover;
@@ -884,7 +884,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .prices {
-    background-image: url(../../img/prices-bg-mob-2x.png);
+    background-image: url(../img/prices-bg-mob-2x.png);
   }
 }
 @media screen and (min-width: 768px) {
@@ -892,12 +892,12 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
     max-width: 768px;
-    background-image: url(../../img/prices-bg-tab.png);
+    background-image: url(../img/prices-bg-tab.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .prices {
-    background-image: url(../../img/prices-bg-tab-2x.png);
+    background-image: url(../img/prices-bg-tab-2x.png);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -905,12 +905,12 @@ body {
     padding-top: 130px;
     padding-bottom: 130px;
     max-width: 1280px;
-    background-image: url(../../img/prices-bg.png);
+    background-image: url(../img/prices-bg.png);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .prices {
-    background-image: url(../../img/prices-bg-2x.png);
+    background-image: url(../img/prices-bg-2x.png);
   }
 }
 
@@ -1465,18 +1465,18 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(../../img/contacts-bg-mob-2x.png);
+    background-image: url(../img/contacts-bg-mob-2x.png);
   }
 }
 @media screen and (min-width: 768px) {
   .contacts {
     padding: 100px 0;
-    background-image: url(../../img/contacts-bg-tab.png);
+    background-image: url(../img/contacts-bg-tab.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(../../img/contacts-bg-tab-2x.png);
+    background-image: url(../img/contacts-bg-tab-2x.png);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1485,12 +1485,12 @@ img {
     padding-bottom: 130px;
     width: calc(50% + 15px);
     padding-left: 100px;
-    background-image: url(../../img/contacts-bg.png);
+    background-image: url(../img/contacts-bg.png);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(../../img/contacts-bg-2x.png);
+    background-image: url(../img/contacts-bg-2x.png);
   }
 }
 
