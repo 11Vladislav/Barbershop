@@ -1,0 +1,97 @@
+// @keyframes time-anim {
+// 	from {
+// 		--time: 5;
+// 	}
+// 	to {
+// 		--time: 50;
+// 	}
+// } 
+
+.snow-container {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    // touch-action: none;
+    // pointer-events: none; 
+
+}
+
+
+@keyframes flake {
+    0% {
+        transform: translate(var(--x-start), var(--y-start)) rotate(0);
+    }
+
+    100% {
+        transform: translate(var(--x-end), var(--y-end)) rotate(50deg);
+    }
+}
+
+.snowflake {
+    --time: 3;
+    --sz: 1rem; // size
+    --blur: 2px;
+    --a: .6;
+    --x-start: 50vw;
+    --x-end: 0;
+    --y-start: -25vh;
+    --y-end: 100vh;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+    font-size: var(--sz);
+    filter: url(#circleBlur4);
+    animation:
+        // time-anim 5s linear infinite,
+        flake calc(var(--time) * 1s) linear infinite var(--delay);
+
+    transform: translate(var(--x-start), -15vh) rotate(0);
+    opacity: var(--a);
+    z-index: 1000;
+
+    &--m {
+        --a: .5;
+        --time: 2;
+        --sz: 2rem;
+        z-index: 2000;
+        filter: unset;
+    }
+
+    &--l {
+        --a: .8;
+        --time: 5;
+        --sz: 3rem;
+        z-index: 8000;
+    }
+
+    &--xl {
+        --a: 1;
+        --time: 10;
+        --sz: 5rem;
+        filter: url(#circleBlur40);
+        z-index: 14000;
+    }
+}
+
+// .snow-container:hover .snowflake {
+// 	animation-play-state: paused;
+// }
+
+html {
+    --surface: hsl(200 10% 10%);
+    --text: hsl(200 5% 80%);
+    --hero-h: calc(100vh - 40px);
+
+    // background-color: var(--surface);
+    color: var(--text);
+}
+
+body {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+    overflow-y: auto;
+}

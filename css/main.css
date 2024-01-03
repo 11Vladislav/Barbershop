@@ -69,6 +69,76 @@ body {
   align-items: center;
 }
 
+.snow-container {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+@keyframes flake {
+  0% {
+    transform: translate(var(--x-start), var(--y-start)) rotate(0);
+  }
+  100% {
+    transform: translate(var(--x-end), var(--y-end)) rotate(50deg);
+  }
+}
+.snowflake {
+  --time: 3;
+  --sz: 1rem;
+  --blur: 2px;
+  --a: .6;
+  --x-start: 50vw;
+  --x-end: 0;
+  --y-start: -25vh;
+  --y-end: 100vh;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  font-size: var(--sz);
+  filter: url(#circleBlur4);
+  animation: flake calc(var(--time) * 1s) linear infinite var(--delay);
+  transform: translate(var(--x-start), -15vh) rotate(0);
+  opacity: var(--a);
+  z-index: 1000;
+}
+.snowflake--m {
+  --a: .5;
+  --time: 2;
+  --sz: 2rem;
+  z-index: 2000;
+  filter: unset;
+}
+.snowflake--l {
+  --a: .8;
+  --time: 5;
+  --sz: 3rem;
+  z-index: 8000;
+}
+.snowflake--xl {
+  --a: 1;
+  --time: 10;
+  --sz: 5rem;
+  filter: url(#circleBlur40);
+  z-index: 14000;
+}
+
+html {
+  --surface: hsl(200 10% 10%);
+  --text: hsl(200 5% 80%);
+  --hero-h: calc(100vh - 40px);
+  color: var(--text);
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+  overflow-y: auto;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -513,8 +583,8 @@ body {
   z-index: 5;
   padding-top: 48px;
   padding-bottom: 48px;
-  transform: scale(1);
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(0);
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-menu .container {
   display: flex;
@@ -527,7 +597,10 @@ body {
   visibility: hidden;
   pointer-events: none;
   transform: scale(0.5);
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu.is-shown {
+  transform: scale(1);
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
