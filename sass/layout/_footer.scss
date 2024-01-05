@@ -1,8 +1,9 @@
 .footer-container {
     display: flex;
+    z-index: -20;
     flex-direction: column-reverse;
     padding: 44px 31px 44px 31px;
-    background-color: var(--alt-background-color);
+    background-color: inherit;
         @media screen and (min-width: 768px) {
             flex-direction: row;
             align-items: center;
@@ -20,6 +21,7 @@
 }
 
 .footer-list {
+    
     display: flex;
     margin-left: auto;
     margin-bottom: 20px;

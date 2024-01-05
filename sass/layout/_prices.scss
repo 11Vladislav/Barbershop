@@ -7,6 +7,8 @@
     background-size: cover;
     background-position: center;
     margin: 0 auto;
+    z-index: -20;
+    
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
@@ -34,6 +36,10 @@
                 background-image: url(../img/prices-bg-2x.png);
             }    
     }
+}
+
+.prices-container{
+    z-index: -20;
 }
 
 .prices-pre-title {

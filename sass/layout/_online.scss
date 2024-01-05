@@ -5,9 +5,11 @@
     @media screen and (min-width: 1200px) {
         display: flex;
     }
+    z-index: -20;
 }
 
 .online {
+    z-index: -20;
     padding: 84px 0;
     width: 100%;
     background-color: #191C26;
@@ -19,16 +21,19 @@
 }
 
 .online-title {
+    z-index: -20;
     text-align: center;
     color: var(--main-title-color);
     margin-bottom: 44px;
 }
 
 .online-form{
+    z-index: -20;
     margin: 0 31px;
 }
 
 .online-input-wrap {
+    z-index: -20;
     display: flex;
     flex-direction: column;
     @media screen and (min-width: 768px) {
@@ -104,4 +109,5 @@
 
 .contact-wrapp .container {
     display: flex;
+    z-index: -20;
 }

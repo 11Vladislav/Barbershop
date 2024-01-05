@@ -15,9 +15,11 @@
 
 .about-container {
     display: flex;
+    
 }
 
 .about-right{
+    
     @media screen and (max-width: 1200px) {
         width: 330px;
     }
@@ -25,6 +27,8 @@
 
 .about-list {
     display: none;
+    z-index: -20;
+   
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: column;
@@ -40,6 +44,7 @@
 
 .about-item:not(:last-child){
     margin-bottom: 30px;
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -63,14 +68,14 @@
         font-size: 28px;
     }
     margin-bottom: 20px;
-    color: var(--second-title-color);
+    color: var(--main-title-color);
 }
 
 .about-after-title {
     @media screen and (max-width: 1200px) {
         font-size: 16px;
     }
-    color: var(--fourth-text-color);
+    color: var(--second-text-color);
     margin-bottom: 20px;
 }
 
@@ -78,10 +83,10 @@
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
-    color: var(--fourth-text-color);
+    color: var(--second-text-color);
     margin-bottom: 44px;
 }
 
 .about-btn {
-    color: var(--second-button-color);
+    color: var(--first-button-color);
 }

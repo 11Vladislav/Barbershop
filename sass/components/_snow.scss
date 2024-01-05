@@ -1,11 +1,11 @@
-// @keyframes time-anim {
-// 	from {
-// 		--time: 5;
-// 	}
-// 	to {
-// 		--time: 50;
-// 	}
-// } 
+@keyframes time-anim {
+	from {
+		--time: 5;
+	}
+	to {
+		--time: 50;
+	}
+} 
 
 .snow-container {
     position: fixed;
@@ -29,7 +29,7 @@
 }
 
 .snowflake {
-    --time: 3;
+    --time: 20;
     --sz: 1rem; // size
     --blur: 2px;
     --a: .6;
@@ -53,7 +53,7 @@
 
     &--m {
         --a: .5;
-        --time: 2;
+        --time: 20;
         --sz: 2rem;
         z-index: 2000;
         filter: unset;
@@ -61,14 +61,14 @@
 
     &--l {
         --a: .8;
-        --time: 5;
+        --time: 20;
         --sz: 3rem;
         z-index: 8000;
     }
 
     &--xl {
         --a: 1;
-        --time: 10;
+        --time: 20;
         --sz: 5rem;
         filter: url(#circleBlur40);
         z-index: 14000;
@@ -84,7 +84,7 @@ html {
     --text: hsl(200 5% 80%);
     --hero-h: calc(100vh - 40px);
 
-    // background-color: var(--surface);
+    background-color: var(--surface);
     color: var(--text);
 }
 

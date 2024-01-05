@@ -21,6 +21,7 @@ img {
 }
 
 .gallery-list {
+    
     margin-bottom: -30px;
     margin-right: -30px;
         @media screen and (min-width: 768px) {
@@ -33,6 +34,7 @@ img {
 }
 
 .gallery-item {
+    z-index: -20;
     margin-bottom: 30px;
     margin-right: 30px;
         @media screen and (min-width: 768px) {

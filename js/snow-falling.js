@@ -32,7 +32,7 @@ const SIZES = [
 	"snowflake--xl"
 ];
 const EMOJI = [
-	"❄️",
+	"❄️", 
 	// "🎅",
 	// "🦌",
 	// "🥶",
