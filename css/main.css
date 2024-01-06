@@ -138,7 +138,6 @@ html {
   --surface: hsl(200 10% 10%);
   --text: hsl(200 5% 80%);
   --hero-h: calc(100vh - 40px);
-  background-color: var(--surface);
   color: var(--text);
 }
 
@@ -788,7 +787,7 @@ body {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  color: var(---main-title-color);
+  color: var(--second-title-color);
   transition: color 300ms linear;
 }
 .hero-link:hover, .hero-link:focus {
@@ -930,6 +929,7 @@ body {
 }
 .about-pre-title {
   margin-bottom: 20px;
+  color: var(--third-text-color);
 }
 .about-pre-title::before {
   background-color: var(--third-text-color);
@@ -937,7 +937,7 @@ body {
 
 .about-title {
   margin-bottom: 20px;
-  color: var(--main-title-color);
+  color: var(--third-text-color);
 }
 @media screen and (max-width: 1200px) {
   .about-title {
@@ -946,7 +946,7 @@ body {
 }
 
 .about-after-title {
-  color: var(--second-text-color);
+  color: var(--fourth-text-color);
   margin-bottom: 20px;
 }
 @media screen and (max-width: 1200px) {
@@ -959,12 +959,12 @@ body {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
-  color: var(--second-text-color);
+  color: var(--fourth-text-color);
   margin-bottom: 44px;
 }
 
 .about-btn {
-  color: var(--first-button-color);
+  color: var(--second-button-color);
 }
 
 .prices {
@@ -1225,14 +1225,15 @@ body {
 
 .reasons-pre-title {
   margin-bottom: 20px;
+  color: var(--third-text-color);
 }
 
 .reasons-pre-title::before {
-  background-color: var(--third-text-color);
+  background-color: var(--second-title-color);
 }
 
 .reasons-title {
-  color: var(--main-title-color);
+  color: var(--third-text-color);
   margin-bottom: 20px;
 }
 @media screen and (max-width: 767px) {
@@ -1244,7 +1245,7 @@ body {
 
 .reasons-after-title {
   margin-bottom: 44px;
-  color: var(--second-text-color);
+  color: var(--fourth-text-color);
   font-size: 16px;
 }
 @media screen and (min-width: 1200px) {
@@ -1286,6 +1287,7 @@ body {
 
 .masters-pre-title {
   margin-bottom: 20px;
+  color: var(--fourth-text-color);
 }
 .masters-pre-title ::before {
   background-color: var(--third-text-color);
@@ -1394,6 +1396,7 @@ img {
 
 .gallery-pre-title {
   margin-bottom: 44px;
+  color: var(--fourth-text-color);
 }
 .gallery-pre-title::before {
   color: var(--third-text-color);
@@ -1747,7 +1750,7 @@ img {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  color: var(--main-title-color);
+  color: var(--third-text-color);
 }
 .footer-link:hover, .footer-link:focus {
   color: var(--accent-color);

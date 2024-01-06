@@ -102,14 +102,15 @@
 
 .reasons-pre-title {
     margin-bottom: 20px;
+    color: var(--third-text-color);
 }
 
 .reasons-pre-title::before {
-    background-color: var(--third-text-color);
+    background-color: var(--second-title-color);
 }
 
 .reasons-title {
-    color: var(--main-title-color);
+    color: var(--third-text-color);
     margin-bottom: 20px;
     @media screen and (max-width: 767px) {
         font-size: 28px;
@@ -119,7 +120,7 @@
 
 .reasons-after-title {
     margin-bottom: 44px;
-    color: var(--second-text-color);
+    color: var(--fourth-text-color);
     font-size: 16px;
     @media screen and (min-width: 1200px){
         margin-bottom: 0;

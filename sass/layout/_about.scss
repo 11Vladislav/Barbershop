@@ -56,7 +56,7 @@
 
 .about-pre-title {
     margin-bottom: 20px;
-
+    color: var(--third-text-color);
     &::before {
         background-color: var(--third-text-color);
     }
@@ -68,14 +68,14 @@
         font-size: 28px;
     }
     margin-bottom: 20px;
-    color: var(--main-title-color);
+    color: var(--third-text-color);
 }
 
 .about-after-title {
     @media screen and (max-width: 1200px) {
         font-size: 16px;
     }
-    color: var(--second-text-color);
+    color: var(--fourth-text-color);
     margin-bottom: 20px;
 }
 
@@ -83,10 +83,10 @@
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
-    color: var(--second-text-color);
+    color: var(--fourth-text-color);
     margin-bottom: 44px;
 }
 
 .about-btn {
-    color: var(--first-button-color);
+    color: var(--second-button-color);
 }
